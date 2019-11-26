@@ -1,0 +1,363 @@
+
+*{
+    font-family: 'Lato', Verdana, sans-serif !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background: url("https://webdev-public.metropolia.fi/taustakuvat/tausta_oma.png") no-repeat fixed #fff;
+    margin: 0;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: -1.5vh 1vh;
+}
+
+
+.img {
+    height: 3.5vw;
+    margin: 0.25vw 0.5vw 0.25vw 0.5vw;
+    float: left;
+}
+
+.headerC{
+    background-color: white;
+    min-height: 4vw;
+    max-height: 3vw;
+    border-bottom: 2px solid #fb5900;
+    margin-bottom: 1.5vw;
+}
+
+.ruokaLista{
+    padding: 1vw;
+}
+.kampus{
+    float: left;
+    margin: 0;
+    font-size: 2.5vw;
+    font-weight: bolder !important;
+    font-family: 'Lato', Verdana, sans-serif !important;
+    color: #646a6d;
+}
+
+.video {
+    padding: 1vw;
+    width: 100%;
+    height: 100%;
+}
+
+.thumb {
+    max-width: 1vw;
+    max-height: 1vw;
+}
+
+.otsikko {
+    font-family: 'Lato', Verdana, sans-serif !important;
+    margin: auto;
+    max-width: 47.75vw;
+    min-width: 47.75vw;
+    text-align: left;
+    background-color: #fb5900;
+    font-size: 1vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    padding-left: 0.7vw;
+    color: white;
+    border-radius: 0.2vw 0.2vw 0 0;
+    border-bottom: 1px solid #bd4300;
+}
+
+.ruokalanjono {
+    margin: auto;
+    max-width: 47.75vw;
+    min-width: 47.75vw;
+    min-height: 35vw;
+    border-radius: 0 0 0.2vw 0.2vw;
+    background-color: white;
+}
+
+.ruokalista {
+    margin: auto;
+    max-width: 47.75vw;
+    min-width: 47.75vw;
+    min-height: 35vw;
+    border-radius: 0 0 0.2vw 0.2vw;
+    background-color: white;
+}
+
+.leftDiv {
+    float: left;
+    margin-left: 1.5vw;
+    position: absolute;
+}
+
+.rightDiv {
+    float: right;
+    margin-right: 1.5vw;
+}
+
+.parentHeight {
+    height: 100vh;
+}
+
+.kuva {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-weight: normal !important;
+    text-align: center;
+    color: #000000;
+    /*margin: 0 !important;*/
+}
+
+p {
+    color: #000000;
+    text-align: center;
+}
+
+li {
+    color: #fea101;
+    padding: 50px;
+}
+
+.appp {
+    max-width: 60%;
+    border-radius: 9px;
+
+}
+
+.rowy {
+    display: flex;
+    min-width: 65%;
+    table-layout: fixed;
+    border-spacing: 10px;
+    border-bottom: 1px dashed rgba(190, 190, 190, 1);
+    border-left: 1px dashed rgba(190, 190, 190, 1);
+    border-right: 1px dashed rgba(190, 190, 190, 1);
+}
+
+.row {
+
+    font-weight: normal !important;
+    display: flex;
+    min-width: 65%;
+    table-layout: fixed;
+    border-spacing: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Row {
+    padding-left: 7rem;
+}
+
+.columnh {
+    float: left;
+    padding: 10px;
+    width: 25vw;
+}
+
+h2 {
+    font-size: 0.6rem;
+    color: #000000;
+
+}
+
+.site {
+    top: 15rem;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+}
+
+.taulukko {
+    max-height: 0rem;
+    background-color: #fd9f1a;
+    margin: auto;
+
+}
+
+a {
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-bottom: 0.6px;
+}
+
+
+
+.column {
+    float: left;
+    padding: 10px;
+    width: 33.3%;
+}
+
+.column1 {
+    float: left;
+    width: 33.3%;
+}
+
+.columno {
+    float: left;
+    padding: 10px;
+    width: 33.3%;
+    border-bottom: 2px solid #505659;
+}
+
+.middle {
+    border-left: 1px dashed rgba(190, 190, 190, 1);
+    border-right: 1px dashed rgba(190, 190, 190, 1);
+}
+
+.middleU {
+    border-left: 1px solid rgba(190, 190, 190, 1);
+    border-right: 1px solid rgba(190, 190, 190, 1);
+}
+
+.left {
+    width: 50%;
+/ / border-right: 1 px dashed rgba(190, 190, 190, 1);
+}
+
+.hinta {
+    padding-top: 1.5rem;
+}
+
+.grandPar {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    margin: auto;
+    width: 50vw;
+    min-height: 8vh;
+    bottom: 2.5vh;
+    left: 25vw;
+}
+.choice{
+    width: 17vw;
+    font-size: 1.5vw;
+    color: #505659;
+    font-weight: bold !important;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.parent {
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: #fd9f1a;
+    color: white;
+}
+
+.list{
+    margin-left: 0vw;
+    overflow: scroll;
+    max-width: 65vw;
+}
+
+.canvas{
+    position: absolute !important;
+    padding: 1vw;
+    width: 100%;
+    height: 75%;
+}
+
+@media (pointer:none), (pointer:coarse) {
+
+    .leftDiv {
+        float: none!important;
+        margin: auto !important;
+        margin-bottom: 10% !important;
+        position: inherit !important;
+    }
+
+    .rightDiv {
+        float: none!important;
+        margin: auto !important;
+
+    }
+    .ruokalanjono {
+        max-width: 90vw !important;
+        min-height: 35vw !important;
+    }
+    .otsikko {
+        max-width: 90vw !important;
+        font-size: 3vw !important;
+    }
+    .ruokalista {
+        max-width: 90vw !important;
+    }
+    .columnh {
+
+        width: 40vw !important;
+    }
+    .thumb {
+        max-width: 3vw !important;
+        max-height: 3vw !important;
+    }
+    .img {
+        float: left;
+
+    }
+    .kampus{
+        font-size: 2.5vw !important;
+        float: left;
+        margin: 0;
+        font-weight: bolder !important;
+        font-family: 'Lato', Verdana, sans-serif !important;
+        color: #646a6d;
+    }
+
+} /* mobiili näkymä ei kursoria*/
+@media only screen and  (max-width: 900px) {
+    .leftDiv {
+        float: none!important;
+        margin: auto !important;
+        margin-bottom: 10% !important;
+        position: inherit !important;
+    }
+
+    .rightDiv {
+        float: none!important;
+        margin: auto !important;
+
+    }
+    .ruokalanjono {
+        max-width: 90vw !important;
+        min-height: 35vw !important;
+    }
+    .otsikko {
+        max-width: 90vw !important;
+        font-size: 2.5vw !important;
+    }
+    .ruokalista {
+        max-width: 90vw !important;
+    }
+    .columnh {
+
+        width: 40vw !important;
+    }
+    .thumb {
+        max-width: 3vw !important;
+        max-height: 3vw !important;
+    }
+    .canvas{
+        position: absolute !important;
+        padding: 1vw;
+        width: 90vw;
+        height: 52vw;
+    }
+}

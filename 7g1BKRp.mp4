@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Imgur</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="copyright" content="Copyright 2019 Imgur, Inc." />
+        <meta id="viewport" name="viewport" content="width=720, user-scalable=yes" />
+        <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/sharePlayer.css?1550001203" />
+
+        <style type="text/css">
+            #content, #video {
+                width:  720px;
+                height: 1280px;
+            }
+
+            #chrome, #progress {
+                width: 720px;
+            }
+        </style>
+
+        <link rel="alternate" type="application/json+oembed" href="https://api.imgur.com/oembed.json?url=https://i.imgur.com/7g1BKRp.gifv" title="Imgur" />
+        <link rel="alternate" type="application/xml+oembed" href="https://api.imgur.com/oembed.xml?url=https://i.imgur.com/7g1BKRp.gifv" title="Imgur" />
+
+        <link rel="canonical"                 href="https://i.imgur.com/7g1BKRp.gifv" />
+
+        <meta property="og:site_name"         content="Imgur" />
+                <meta property="og:title"             content="Imgur"/>
+        <meta property="og:description"       content="" />
+        
+        <meta property="og:type"              content="video.other" />
+                <meta property="og:url"               content="https://i.imgur.com/7g1BKRp.gif?noredirect" />
+        <meta property="og:image"             content="https://i.imgur.com/7g1BKRp.gif?noredirect" />
+        <meta property="og:image:width"       content="720" />
+        <meta property="og:image:height"      content="1280" />
+        
+
+        <meta name="twitter:site"                       content="@imgur" />
+        <meta name="twitter:domain"                     content="imgur.com" />
+        <meta name="twitter:app:id:googleplay"          content="com.imgur.mobile" />
+        <meta name="twitter:card"                       content="player" />
+                <meta name="twitter:title"                      content="Imgur"/>
+        <meta name="twitter:description"                content="" />
+        
+        <meta name="twitter:image"                      content="https://i.imgur.com/7g1BKRp.jpg?play" />
+        <meta name="twitter:player"                     content="https://i.imgur.com/7g1BKRp.gifv?twitter#t" />
+        <meta name="twitter:player:width"               content="720" />
+        <meta name="twitter:player:height"              content="1280" />
+        <meta name="twitter:player:stream"              content="https://i.imgur.com/7g1BKRp.mp4" />
+        <meta name="twitter:player:stream:content_type" content="video/mp4">
+        <!-- Google Tag Manager -->
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M6N38SF');</script>
+<!-- End Google Tag Manager -->
+
+        <!--[if lte IE 8]><script type="text/javascript" src="//s.imgur.com/min/iepoly.js?1550001203"></script>
+<![endif]-->
+    </head>
+    <body id="body">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6N38SF"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div id="content">
+            <script type="text/javascript">
+                window.image        = '7g1BKRp';
+                window.image_size   = '4047672';
+                window.image_width  = '720';
+                window.image_height = '1280';
+                window.cdn_url      = '//i.imgur.com';
+
+                if(navigator.userAgent.match(/Firefox/)) {
+                    document.body.className = document.body.className + ' firefox';
+                }
+            </script>
+            <div class="vid-container">
+                
+                
+                
+                <div class="post-image">
+    
+
+            <div class="video-container">
+            <script type="text/javascript">
+                var videoItem = {
+                    looping:  false,
+                    width:    720,
+                    height:   1280,
+                    size:     4047672,
+                    gifUrl:   '//i.imgur.com/7g1BKRp.gif',
+                    forceGif: false,
+                    prefer_video: true,
+                    hash:     '7g1BKRp',
+                    forceLoadAll: false,
+                }
+            </script>
+            <video poster="//i.imgur.com/7g1BKRph.jpg"
+                preload="auto"
+                autoplay="autoplay"
+                muted="muted" ></video>
+            <div class="video-elements">
+                <source src="//i.imgur.com/7g1BKRp.mp4" type="video/mp4">
+            </div>
+            <progress value="0" max="100" min="0"></progress>
+            <div class="video-loader"></div>
+            <script id="script7g1BKRp" type="text/javascript" src="//s.imgur.com/min/imageViewerInline.js?1550001203"></script>
+
+            <meta itemprop="thumbnailUrl" content="https://i.imgur.com/7g1BKRph.jpg" />
+            <meta itemprop="contentURL" content="https://i.imgur.com/7g1BKRp.mp4" />
+            <meta itemprop="embedURL" content="https://i.imgur.com/7g1BKRp.gifv" />
+        </div>
+    
+</div>
+
+            </div>
+            <script type="text/javascript">
+            var pixel_url = '//i.imgur.com/imageview.gif?a=7g1BKRp&r=' + encodeURIComponent(document.referrer);
+            var pixel = document.createElement('img');
+            pixel.src = pixel_url;
+            </script>
+
+            <div id="chrome">
+                <div class="icon">
+                    <a href="//imgur.com/7g1BKRp"><img src="//i.imgur.com/favicon.ico" /></a>
+                </div>
+                <div class="imgur">
+                    <a href="//imgur.com/7g1BKRp">Imgur</a>
+                </div>
+                <div class="controls">
+                    <a href="//imgur.com/download/7g1BKRp">download</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="//s.imgur.com/min/sharePlayer.js?1550001203"></script>
+
+    </body>
+</html>

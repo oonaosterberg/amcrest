@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metropolia jonokamera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+    <!-- Load BodyPix -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+    <script src="models/face-api.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/MP-favicon.png"/>
+    <script>
+      window.addEventListener('load', (event) => {
+
+      });
+
+      document.addEventListener('readystatechange', (event) => {
+      });
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+      });
+    </script>
+</head>
+<body onload="choiceFunction(); choiceKampus();">
+<header class="headerC">
+    <img src="img/MP-logo.png" class="img">
+    <h1 class="kampus" id="kampus"> Kampus</h1>
+    <div class="dropdown">
+        <div class="list" id="kampuslista" style="display: none">
+            <h1 class="choice" id="16365">Leiritie</h1>
+            <h1 class="choice" id="16364">Hämeentie</h1>
+            <h1 class="choice" id="35449">Myllypuro</h1>
+            <h1 class="choice" id="16448">Vanha viertotie</h1>
+        </div>
+    </div>
+
+
+</header>
+<div class="leftDiv">
+    <h2 class="otsikko">
+        <img class="thumb" src="img/jono-img.png">
+        RUOKALAN JONO
+    </h2>
+    <div class="ruokalanjono">
+        <div>
+            <canvas width="720" height="560" id="canvas" class="canvas"></canvas>
+            <video class="video" id="video" width="720" height="560" autoplay muted loop src="img/testivideo.mp4">
+            </video>
+
+        </div>
+    </div>
+</div>
+<div class="rightDiv">
+    <h2 class="otsikko">
+        <img class="thumb" src="img/ruokalista-img.png">
+        RUOKALISTA
+    </h2>
+    <div class="ruokalista">
+        <div class="moi" id="ruokaLista">
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script>
+
+  Promise.all([
+    faceapi.nets.tinyFaceDetector.loadFromUri('./models'),
+    faceapi.nets.faceLandmark68Net.loadFromUri('./models'),
+    faceapi.nets.faceRecognitionNet.loadFromUri('./models'),
+    faceapi.nets.faceExpressionNet.loadFromUri('./models'),
+  ]);
+
+  loadAndPredict();
+
+  const img = document.getElementById('video');
+  const video = document.getElementById('video');
+
+  async function loadAndPredict() {
+
+    const net = await bodyPix.load({
+      architecture: 'MobileNetV1',
+      outputStride: 16,
+      multiplier: 0.75,
+      quantBytes: 2,
+
+    });
+    setInterval(async () => {
+      const partSegmentation = await net.segmentPersonParts(img);
+
+// The colored part image is an rgb image with a corresponding color from the
+// rainbow colors for each part at each pixel, and white pixels where there is
+// no part.
+      const coloredPartImage = bodyPix.toColoredPartMask(partSegmentation);
+      const opacity = 0.7;
+      const flipHorizontal = false;
+      const maskBlurAmount = 0;
+      const pixelCellWidth = 10.0;
+
+      const canvas = document.getElementById('canvas');
+
+      const displaySize = {width: video.width, height: video.height};
+      faceapi.matchDimensions(canvas, displaySize);
+
+      canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+      bodyPix.drawPixelatedMask(
+          canvas, img, coloredPartImage, opacity, maskBlurAmount,
+          flipHorizontal, pixelCellWidth);
+    }, 60);
+  }
+
+  function choiceFunction() {
+    document.getElementById('kampus').addEventListener('click', function() {
+      if (document.getElementById('kampuslista').style.display === 'inline-flex') {
+        document.getElementById('kampuslista').style.display = 'none';
+      } else if (document.getElementById('kampuslista').style.display === 'none') {
+        document.getElementById('kampuslista').style.display = 'inline-flex';
+      }
+      console.log("close");
+    });
+  }
+
+  function choiceKampus() {
+
+        let kampusButtons = document.getElementById('kampuslista');
+
+        kampusButtons.addEventListener('click', function(event) {
+        let innerHtml = event.target || event.srcElement;
+        console.log(innerHtml.id);
+        document.getElementById('kampus').innerHTML = innerHtml.innerHTML;
+        document.getElementById('kampuslista').style.display = 'none';
+        console.log("closeCampus")
+      });
+  }
+
+
+</script>
+<script src="main.js"></script>
+
+
+</html>
+
