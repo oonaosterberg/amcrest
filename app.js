@@ -1,5 +1,4 @@
 
-/*
 const fetch = require('node-fetch');
 const fs = require('fs');
 
@@ -34,4 +33,4 @@ fetch('https://www.sodexo.fi/ruokalistat/output/daily_json/16365/'+year+'/'+mont
   console.log( e.message, data);
 
 });
-*/
+

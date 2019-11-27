@@ -23,7 +23,12 @@ document.getElementById('kampuslista').addEventListener('click', function() {
     console.log(year);
 
         fetch(url).then((response) => {
-            return response.json();
+            if(response.ok) {
+                return response.json();
+            }
+            else{
+                throw new Error('Response not ok');
+            }
         }).then((result) => {
 
             const lunch = result.courses;
